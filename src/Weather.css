@@ -1,15 +1,20 @@
 .Weather {
   font-family: arial, sans-serif;
-  border: 1px solid #dadde1;
+  border-color: rgb(31, 41, 130);
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 20px;
   padding: 16px;
-  margin: 30px auto;
-  border-radius: 4px;
-  color: rgb(135, 135, 135);
+  margin: 30px auto 10px auto;
 }
 
+.Weather .btn {
+  background-color: rgba(82, 39, 161, 0.849);
+  border-color: rgba(82, 39, 161, 0.849);
+}
 .Weather h1 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 550;
   margin: 20px 0 0 0;
   line-height: 29px;
 }
@@ -49,4 +54,37 @@
   top: -34px;
   margin-left: 5px;
   line-height: 1;
+}
+
+.Weather .forecast {
+  border-top: darkblue;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-style: solid;
+  padding: 20px 20px 0;
+  margin: 0 20px 0;
+}
+
+.Weather .low-high {
+  border-top: teal;
+  border-bottom: teal;
+  border-left: transparent;
+  border-right: transparent;
+  border-style: solid;
+  margin: auto 10px;
+}
+.Weather .icons img {
+  width: 50px;
+  height: 50px;
+}
+.Weather .five-days {
+  border: cornflowerblue;
+  border-style: solid;
+  border-radius: 10px;
+  margin: auto 8px;
+  padding-top: 5px;
+}
+.Weather .five-day-row {
+  margin: auto 20px;
 }
