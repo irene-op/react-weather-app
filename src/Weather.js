@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -60,91 +61,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-
-        <section class="forecast">
-          <div class="row" id="forecast">
-            <div class="col five-days">
-              <strong>12:00</strong> <br />
-              <div class="low-high">
-                15°C
-                <br />
-                <strong>22°C</strong>
-                <br />
-              </div>
-              <span class="icons">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="main-icon"
-                />
-              </span>
-            </div>
-            <div class="col five-days">
-              <strong>15:00</strong> <br />
-              <div class="low-high">
-                15°C
-                <br />
-                <strong>22°C</strong>
-                <br />
-              </div>
-              <span class="icons">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="main-icon"
-                />
-              </span>
-            </div>
-            <div class="col five-days">
-              <strong>18:00</strong> <br />
-              <div class="low-high">
-                15°C
-                <br />
-                <strong>22°C</strong>
-                <br />
-              </div>
-              <span class="icons">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="main-icon"
-                />
-              </span>
-            </div>
-            <div class="col five-days">
-              <strong>21:00</strong> <br />
-              <div class="low-high">
-                15°C
-                <br />
-                <strong>22°C</strong>
-                <br />
-              </div>
-              <span class="icons">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="main-icon"
-                />
-              </span>
-            </div>
-            <div class="col five-days">
-              <strong>00:00</strong> <br />
-              <div class="low-high">
-                15°C
-                <br />
-                <strong>22°C</strong>
-                <br />
-              </div>
-              <span class="icons">
-                <img
-                  src="http://openweathermap.org/img/wn/01d@2x.png"
-                  alt="Clear"
-                  id="main-icon"
-                />
-              </span>
-            </div>
-          </div>
-        </section>
+        <WeatherForecast />
       </div>
     );
   } else {
