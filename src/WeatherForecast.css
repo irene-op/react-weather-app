@@ -1,4 +1,4 @@
-.Weather .forecast {
+.WeatherForecast {
   border-top: darkblue;
   border-bottom: transparent;
   border-left: transparent;
@@ -6,9 +6,10 @@
   border-style: solid;
   padding: 20px 20px 0;
   margin: 0 20px 0;
+  text-align: center;
 }
 
-.Weather .low-high {
+.WeatherForecast .low-high {
   border-top: teal;
   border-bottom: teal;
   border-left: transparent;
@@ -16,17 +17,19 @@
   border-style: solid;
   margin: auto 10px;
 }
-.Weather .icons img {
+.WeatherForecast img {
+  display: block;
+  margin: 5px auto;
   width: 50px;
   height: 50px;
 }
-.Weather .five-days {
+.WeatherForecast .five-days {
   border: cornflowerblue;
   border-style: solid;
   border-radius: 10px;
   margin: auto 8px;
   padding-top: 5px;
 }
-.Weather .five-day-row {
+.WeatherForecast .five-day-row {
   margin: auto 20px;
 }
