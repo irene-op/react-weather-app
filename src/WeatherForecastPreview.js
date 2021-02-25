@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastPreview(props) {
   function hours() {
@@ -22,15 +23,11 @@ export default function WeatherForecastPreview(props) {
       <strong>{hours()}</strong>
       <br />
       <div className="low-high">
-        {minTemperature()}ºC
+        {minTemperature()}
         <br />
-        <strong>{maxTemperature()}ºC</strong>
+        <strong>{maxTemperature()}</strong>
       </div>
-      <img
-        src="http://openweathermap.org/img/wn/01n@2x.png"
-        alt="Clear"
-        id="main-icon"
-      />
+      <WeatherIcon code={props.data.weather[0].icon} />
     </div>
   );
 }

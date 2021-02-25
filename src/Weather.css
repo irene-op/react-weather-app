@@ -9,14 +9,18 @@
 }
 
 .Weather .btn {
-  background-color: rgba(82, 39, 161, 0.849);
-  border-color: rgba(82, 39, 161, 0.849);
+  background-color: rgb(100, 149, 237);
+  border-color: rgb(100, 149, 237);
 }
 .Weather h1 {
   font-size: 24px;
   font-weight: 550;
   margin: 20px 0 0 0;
   line-height: 29px;
+}
+
+.Weather .WeatherInfo {
+  margin: 15px;
 }
 
 .Weather ul {
