@@ -10,11 +10,11 @@ export default function WeatherForecast(props) {
   /*let iconCode = forecast.list[0].weather[0].icon;*/
 
   function handleForecastResponse(response) {
-    setLoaded(true);
     setForecast(response.data);
+    setLoaded(true);
   }
 
-  if (loaded) {
+  if (loaded && props.city === forecast.city.name) {
     return (
       <div className="WeatherForecast row">
         <WeatherForecastPreview data={forecast.list[0]} />
