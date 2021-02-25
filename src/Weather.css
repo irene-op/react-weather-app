@@ -6,6 +6,7 @@
   border-radius: 20px;
   padding: 16px;
   margin: 30px auto 10px auto;
+  background-color: rgba(151, 180, 233, 0.274);
 }
 
 .Weather .btn {
@@ -40,6 +41,7 @@
   margin-top: 5px;
   margin-right: 10px;
   display: inline-block;
+  margin: 0 auto;
 }
 
 .Weather .temperature {
